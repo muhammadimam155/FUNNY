@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: pink;
+        }
+        .card{
+            /* margin-left: 300px; */
+            margin-top: 200px;
+            text-align: center;
+
+        }
+        #btn1{
+            margin-top: 20px;
+            margin-left: 500px;
+        }
+        #btn2{
+            margin-top: 70px;
+            margin-left: 300px;
+        }#btn3{
+            margin-top: 50px;
+            margin-left: 700px;
+        }#btn{
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    
+<div class="card">
+    <img src="./img/hold_hand_bears1.GIF" alt="" >
+    <h1>Maan bhi ja yar </h1>
+    <a href="index1.html">
+        <button onclick="yes()">yes</button>
+    </a>
+    <button onmouseover="no()" id="btn" >no</button>
+</div>
+    <button class="btn" onmouseover="no1()" id="btn1" style="display: none;" >no</button>
+    <button class="btn" onmouseover="no2()" id="btn2"  style="display: none;">no</button>
+    <button class="btn" onmouseover="no3()" id="btn3" style="display: none;">no</button>
+</body>
+<script>
+    function no(){
+        var btn = document.getElementById("btn")
+        var btn1 = document.getElementById("btn1")
+        var btn2 = document.getElementById("btn2")
+        var btn3 = document.getElementById("btn3")
+        btn.style.display='none'
+        btn1.style.display='block'
+    }
+    function no1() {
+        var btn = document.getElementById("btn")
+        var btn1 = document.getElementById("btn1")
+        var btn2 = document.getElementById("btn2")
+        var btn3= document.getElementById("btn3")
+        btn1.style.display='none'
+        btn2.style.display='block'
+    }
+    function no2() {
+        var btn = document.getElementById("btn")
+        var btn1 = document.getElementById("btn1")
+        var btn2 = document.getElementById("btn2")
+        var btn3 = document.getElementById("btn3")
+        btn2.style.display='none'
+        btn3.style.display='block'
+    }
+    function no3() {
+        var btn = document.getElementById("btn")
+        var btn1 = document.getElementById("btn1")
+        var btn2 = document.getElementById("btn2")
+        var btn3 = document.getElementById("btn3")
+        btn3.style.display='none'
+        btn.style.display='block'
+    }
+</script>
+</html>
